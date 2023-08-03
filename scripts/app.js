@@ -10,7 +10,9 @@ async function getWeatherData() {
 
   const API_KEY_2 = 'b3534703539d436aa6f130323233107';// weather API key
 
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}`)
+  // const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}`)
+
+  const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY_2}&q=${currentCity}&aqi=yes`)
 
   const data = await response.json();
 
