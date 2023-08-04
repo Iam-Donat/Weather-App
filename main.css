@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
   background: url(./img/clouds-weather.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   height: 100vh;
   color: #6b7280;
 }
@@ -26,6 +26,8 @@ header {
   background-color: #0f172a;
   padding: 1rem;
   color: #cfcfcf;
+  gap: 1rem;
+  justify-content: center;
 }
 
 header img {
@@ -50,12 +52,22 @@ header img {
 }
 
 .container {
-  width: 40%;
+  position: relative;
+  max-width: 935px;
+  width: 50%;
   margin: 2rem auto;
   padding: 2rem;
   background-color: #0f172a;
   color: #cfcfcf;
   border-radius: 10px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: crimson;
 }
 
 .search__bar {
@@ -65,7 +77,7 @@ header img {
   gap: 5px;
   padding: .3rem;
   border-radius: 10px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   background-color: #1e293b;
 }
@@ -84,4 +96,106 @@ header img {
   background: none;
 }
 
-.search__bar button {}
+/* === INFO === */
+
+.info {
+  color: #a1a1aa;
+}
+
+.city {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.country {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.current__time {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.condition {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  color: #a1a1aa;
+}
+
+.condition__icon {
+  display: inline-block;
+  width: 9rem;
+}
+
+.condition__text {
+  background-color: #1e293b;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.temperature {
+  font-size: 7rem;
+  font-weight: 500;
+}
+
+/* ----------- */
+.more__info {
+  border-top: 3px solid #1e293b;
+  padding: 10px;
+}
+
+.credits {
+  background-color: #0f172a;
+  text-align: center;
+  color: crimson;
+
+}
+
+.credits a {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+
+
+
+/* -- Media Queries */
+
+
+@media (max-width: 915px) {
+  .container {
+    /* border: 2px solid rgb(255, 162, 0); */
+    width: 60%;
+    padding: 1rem;
+  }
+
+}
+
+@media (max-width: 815px) {
+  .container {
+    /* border: 2px solid rgb(81, 255, 0); */
+    width: 70%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .container {
+    /* border: 2px solid rgb(4, 0, 255); */
+    width: 80%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .container {
+    /* border: 2px solid rgb(0, 234, 255); */
+    width: 90%;
+    padding: 1rem;
+  }
+}
