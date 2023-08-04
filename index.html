@@ -12,6 +12,59 @@
 </head>
 
 <body>
+  <!-- title -->
+  <header>
+    <img src="./img/weather.png" alt="">
+    <h1>Weather App</h1>
+  </header>
+
+  <!-- main content -->
+  <main class="container">
+
+    <!-- search bar -->
+    <div class="search__bar">
+      <div class="btn">🔍</div>
+      <input type="text" placeholder="search city">
+    </div>
+
+    <!-- info -->
+    <div class="info">
+      <!--  current location City/Country-->
+      <p class="location">
+        <span class="city">Kigali</span>,
+        <span class="country">Rwanda</span>
+      </p>
+
+      <p class="">
+        <span class="current__time">
+          2023-08-04 12:15
+        </span>
+      </p>
+    </div>
+
+    <!-- condition -->
+    <div class="condition">
+      <div>
+        <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="current weather icon" class="condition__icon">
+        <p class="condition__text">
+          Partly cloudy
+        </p>
+      </div>
+      <p>
+        <span class="temperature">22</span>
+        &#176C
+      </p>
+    </div>
+
+    <div class="more__info">
+      <!-- last update time -->
+      <p>Last Updated:
+        <span class="time">2023-08-04 12:15</span>
+      </p>
+    </div>
+  </main>
+
+
 
   <!-- Javascript -->
   <script src="./scripts/app.js"></script>

@@ -10,3 +10,22 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+img {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: #171717;
+  padding: 1rem;
+  color: #cfcfcf;
+}
+
+header img {
+  width: 2rem;
+}
