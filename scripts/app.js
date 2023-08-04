@@ -73,3 +73,11 @@ async function getUserWeatherData() {
 
 document.body.addEventListener('load', getWeatherData());
 searchBtn.addEventListener('click', getUserWeatherData);
+
+
+// === get Current Year === //
+const getCurrentYear = new Date().getFullYear();
+const currentYear = document.querySelector('.year');
+
+console.log(getCurrentYear);
+currentYear.textContent = getCurrentYear
