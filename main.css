@@ -122,6 +122,7 @@ header img {
   align-items: center;
   margin: 2rem;
   color: #a1a1aa;
+  gap: 2rem;
 }
 
 .condition__icon {
